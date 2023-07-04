@@ -1,0 +1,121 @@
+:root{
+    --conteiner: #ffffff;
+    --font: #000000;
+    --buton: #151a41;
+    --radio: #ff0099;
+    --bordeCaja: 1px solid rgba(21, 26, 65, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 500px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 460px;
+    height: 491px;
+    border-radius: 15px;
+    background: #FFFFFF;
+}
+
+.card i{
+    position: absolute;
+    
+    right: 10px;
+    top: 10px;
+}
+
+.card h2{
+    color: var(--buton);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.box-puntaje{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-puntaje input{
+    display: none;
+}
+
+input:checked + label div {
+    background-color: var(--radio);
+    color: var(--conteiner);
+    box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.537);
+    border: none;
+}
+
+
+
+.box-puntaje label div{
+    width: 55px;
+    height: 50px;
+    border: var(--bordeCaja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px  ;
+}
+
+.puntaje{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.puntaje p{
+    width: 40%;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.botom-termino{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.botom-termino input{
+    -webkit-transform: scale(1.5);
+}
+
+.botom-termino label{
+    font-size: 18px;
+}
+
+.card hr{
+    width: 80%;
+    color: var(--bordeCaja);
+}
+
+
+.button{
+    width: 50%;
+    height: 30px;
+}
