@@ -116,6 +116,14 @@ input:checked + label div {
 
 
 .button{
-    width: 50%;
-    height: 30px;
+    padding: 15px 150px;
+    cursor: pointer;
+}
+
+.button i{
+    bottom: 10px;
+    position: absolute;
+    right: 186px;
+    top: 400px;
+
 }
